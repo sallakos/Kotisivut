@@ -1,0 +1,470 @@
+/* Testaukseen */
+/* .floater {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: white;
+  color: black;
+} */
+/* Yleiset */
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+
+body {
+  font-family: "Molengo", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #121929;
+  /* background-image: url("kuvat/background.jpg"); */
+  background-repeat: no-repeat;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  height: 150px;
+  font-size: 3rem;
+  padding: 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 70vh;
+}
+
+h1 {
+  font-family: "Mansalva", cursive;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Mansalva", cursive;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+h4 {
+  line-height: 1.5;
+}
+
+a {
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+hr {
+  width: 90%;
+  border-top: 2px solid rgba(250, 250, 250, 0.5);
+  margin: 0 auto;
+}
+
+.section-content {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Painikkeet ja navbar */
+.navigation {
+  position: fixed;
+}
+
+.lang-chooser {
+  padding: 20px 10px 0px;
+  font-family: "Inconsolata", monospace;
+}
+
+.nav-lang-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  padding: 0px 10px;
+  color: white;
+}
+
+.nav-lang-btn:focus {
+  outline: 0;
+}
+
+.nav-lang-btn:disabled {
+  color: hsl(165, 62%, 90%);
+}
+
+.nav-btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+  margin: 25px auto;
+}
+
+.nav-btn:hover {
+  background-color: hsl(165, 62%, 80%);
+  border-color: hsl(165, 62%, 80%);
+}
+
+.nav-btn.disabled, .nav-btn:disabled {
+  color: #212529;
+  background-color: hsl(165, 62%, 90%);
+  border-color: hsl(165, 62%, 90%);
+}
+
+/* Otsikko */
+.title-text {
+  margin: auto;
+}
+
+.title-img {
+  height: 50vh;
+  width: auto;
+  border-radius: 5%;
+}
+
+/* About me */
+#history {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #121929;
+}
+
+.btn-wrapper {
+  margin-top: 50px;
+}
+
+.about-btn {
+  margin: 20px;
+}
+
+/* Override Bootsrap tooltip */
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  top: 0;
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: hsl(165, 65%, 20%);
+}
+
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  right: 0;
+  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-right-color: hsl(165, 65%, 20%);
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: hsl(165, 65%, 20%);
+  border-radius: 0.25rem;
+}
+
+/* Väliviivat */
+.hr {
+  background-color: #121929;
+  border: none;
+  z-index: 10;
+}
+
+.left-diagonal {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  transition: 1s;
+}
+
+.right-diagonal {
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  transition: 1s;
+  position: absolute;
+  margin-left: 5%;
+}
+
+.left-straight {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  transition: 1.5s;
+}
+
+.right-straight {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  transition: 1.5s;
+}
+
+#about {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #121929;
+}
+
+/* Galleria */
+#gallery {
+  background-color: #121929;
+}
+
+/* Pikkukuvat */
+.img-clickable {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.img-clickable:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.position-top {
+  object-position: top;
+}
+
+.position-left {
+  object-position: left;
+}
+
+.position-bottom {
+  object-position: bottom;
+}
+
+.position-right {
+  object-position: right;
+}
+
+.col-gallery {
+  background-color: white;
+}
+
+.gallery-row {
+  height: calc(1/12*100vw);
+}
+
+/* Popup-galleria */
+#gallery-popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  opacity: 1;
+}
+
+.popup-gallery-content {
+  height: 100vh;
+}
+
+.carousel-inner {
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  margin: auto;
+}
+
+.mycarousel {
+  width: 80vw;
+  margin: auto;
+}
+
+.f-block {
+  height: 100%;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+
+.img-block {
+  display: block;
+  margin: auto;
+}
+
+.limit-height {
+  margin: auto;
+  height: 80vh;
+  width: auto;
+}
+
+.limit-width {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+.my-carousel-caption {
+  position: relative;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-popup {
+  position: fixed;
+  left: 90%;
+  font-size: 4rem;
+  background-color: transparent;
+  border: none;
+  padding: 0px 10px;
+  color: white;
+}
+
+.close-popup:focus {
+  outline: 0;
+}
+
+/* Footer */
+.container-links {
+  display: block;
+  margin: auto;
+}
+
+.contact-link {
+  margin: 30px;
+}
+
+.contact-link:hover {
+  color: hsl(165, 62%, 80%);
+}
+
+.contact-link:active {
+  color: hsl(165, 62%, 70%);
+}
+
+/* Leveä näyttö */
+@media screen and (min-width: 768px) {
+  .section-content {
+    padding: 5% 10%;
+  }
+}
+
+/* Kapeahko näyttö */
+@media screen and (max-width: 830px) {
+  .title-img {
+    width: 35vw;
+    height: auto;
+  }
+}
+
+/* Kapea näyttö */
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 70vw;
+    height: auto;
+  }
+
+  footer {
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .section-content {
+    padding: 50px 5%;
+  }
+
+  .navigation {
+    position: absolute;
+  }
+
+  .vert-navbar {
+    display: none;
+  }
+
+  .title-img {
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+    object-position: 50% 15%;
+    margin: 30px auto;
+  }
+
+  #history {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #history p {
+    text-align: center;
+  }
+
+  #about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #about p {
+    text-align: center;
+  }
+
+  .about-btn {
+    margin: 10px;
+  }
+
+  .mycarousel {
+    width: 95vw;
+  }
+
+  .close-popup {
+    left: 80%;
+  }
+
+  .limit-width {
+    width: 95%;
+  }
+
+  .contact-link {
+    margin: 15px;
+  }
+}
