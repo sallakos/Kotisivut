@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Tallennetaan tarvittavia muuttujia.
 
 // Kunkin osan alkamiskohta.

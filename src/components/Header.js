@@ -11,7 +11,7 @@ const Header = ({ description }) => {
             </h4>
           </div>
           <div className='col-md-6'>
-            <img src='kuvat/title.jpg' className='title-img' alt='Sallan kuva' />
+            <img src='pictures/title.jpg' className='title-img' alt='Sallan kuva' />
           </div>
         </div>
       </div>

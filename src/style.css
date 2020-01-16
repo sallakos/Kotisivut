@@ -17,9 +17,9 @@ body {
   text-align: center;
   color: white;
   background-color: #121929;
-  /* background-image: url("kuvat/background.jpg"); */
+  background-image: url("background.jpg");
   background-repeat: no-repeat;
-  webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;

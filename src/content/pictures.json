@@ -1,0 +1,110 @@
+[{
+    "ext": "jpeg",
+    "limit": "height",
+    "alt": "Maisemia Andorrassa",
+    "description": {
+      "fi": "Maisemien ihailua Andorrassa kesällä 2019.",
+      "en": "Landscape in Andorra, summer 2019."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "width",
+    "alt": "Seeproja Etelä-Afrikassa",
+    "description": {
+      "fi": "Eläimiä Etelä-Afrikassa, Pilanesbergin kansallispuistossa, kesällä 2017.",
+      "en": "Animals in Pilanesberg national park, South Africa, summer 2017."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "alt": "Melontaa Aurajoessa",
+    "description": {
+      "fi": "Melontaretkellä Aurajoessa.",
+      "en": "Canoeing in River Aura."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "alt": "Läskipyöräilyä Ylläksellä",
+    "description": {
+      "fi": "Läskipyörällä Ylläksellä hiihtolomalla 2018.",
+      "en": "Fatbiking at Ylläs, winter 2018."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "alt": "Paprika",
+    "description": {
+      "fi": "Kasvatimme joskus paprikan. Se kuoli aika pian.",
+      "en": "We once raised a pepper, it died."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "alt": "Kiipeilyä",
+    "description": {
+      "fi": "Innostuin joskus kovasti boulderoinnista. Sitä tässä kuvassa ei tosin harrasteta.",
+      "en": "I once was quite excited about bouldering, though that is not happening in this picture."
+    }
+  },
+  {
+    "ext": "jpeg",
+    "limit": "height",
+    "alt": "Värejä Kuubassa",
+    "description": {
+      "fi": "Väriloistoa Kuuban Havannassa jouluna 2018.",
+      "en": "Colours in Havana, Cuba, Christmas 2018."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "width",
+    "alt": "Voimanoston MM-kisat Texasissa",
+    "description": {
+      "fi": "Kyykky voimanoston MM-kilpailuista Texasista vuonna 2016.",
+      "en": "A squat from the powerlifting world championships in Texas, summer 2016."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "alt": "Sähköpotkulaudalla Lissabonissa",
+    "description": {
+      "fi": "Maisemaa Lissabonista kesällä 2019.",
+      "en": "Lissabon, summer 2019."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "width",
+    "alt": "Voimailua Akateeminen Herwannan vahvin nainen -kilpailussa",
+    "description": {
+      "fi": "Wappuna Herwannan Hauiskääntö järjestää Akateeminen Herwannan vahvin nainen -kilpailut, tässä tyylinäyte sieltä.",
+      "en": "Herwannan Hauiskääntö organises a strong woman competition every Wappu."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "position": "position-top",
+    "alt": "Maastaveto opiskelijoiden voimanoston MM-kilpailuissa",
+    "description": {
+      "fi": "Maastaveto opiskelijoiden voimanoston MM-kilpailuissa Etelä-Afrikassa 2017. Näistä kisoista heltisi mestaruus.",
+      "en": "Deadlift from World University Powerlifting Cup in South Africa 2017. This competiotion resulted in victory."
+    }
+  },
+  {
+    "ext": "jpg",
+    "limit": "height",
+    "alt": "Sagrada Familia Barcelonassa",
+    "description": {
+      "fi": "Sagrada Familia Barcelonassa, pitkäaikainen haavematkakohde toteutettu kesällä 2019.",
+      "en": "A long time dream destinationa, Barcelona, visited in summer 2019."
+    }
+  }
+]
