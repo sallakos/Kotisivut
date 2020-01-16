@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Divider = () => {
+const Divider = ({ order }) => {
   return (
-  <div className="hr">
-    <hr className="right-diagonal first" />
-    <hr className="left-diagonal first" />
-  </div>
+    <div className='hr'>
+      <hr className={`right-diagonal ${order}`} />
+      <hr className={`left-diagonal ${order}`} />
+    </div>
   )
 }
 

@@ -54,7 +54,7 @@ $(document).ready(function() {
   $("#btn-" + currentSection).attr("disabled", true);
 
   // Sivu näkyviin vasta kun se on ladattu.
-  $("body").toggleClass("invisible");
+  // $("body").toggleClass("invisible");
 
 });
 
