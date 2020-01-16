@@ -1,5 +1,6 @@
 {
   "name": "kotisivut",
+  "homepage": "http://sallakos.mbnet.fi",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
