@@ -1,15 +1,15 @@
 import React from 'react'
 
-const NavBar = ({ language, toggleLanguage, activeSection }) => {
+const NavBar = ({ language, toggleLanguage }) => {
 
-  const isFinnish = language === 'fi' ? ['active-lang', true] : ['nonactive-lang', '']
-  const isEnglish = language === 'en' ? ['active-lang', true] : ['nonactive-lang', '']
+  const isFinnish = language === 'fi' ? {status: 'active-lang', active: true} : {status: 'nonactive-lang', active: ''}
+  const isEnglish = language === 'en' ? {status: 'active-lang', active: true} : {status: 'nonactive-lang', active: ''}
 
   return (
     <nav className='navigation'>
       <div className='lang-chooser'>
-        <button onClick={toggleLanguage} className={`nav-lang-btn language-choose ${isFinnish[0]}`} type='button' disabled={isFinnish[1]}>FI</button>|
-        <button onClick={toggleLanguage} className={`nav-lang-btn language-choose ${isEnglish[0]}`} type='button' disabled={`${isEnglish[1]}`}>EN</button>
+        <button onClick={toggleLanguage} className={`nav-lang-btn ${isFinnish.status}`} type='button' disabled={isFinnish.active}>FI</button>|
+        <button onClick={toggleLanguage} className={`nav-lang-btn ${isEnglish.status}`} type='button' disabled={isEnglish.active}>EN</button>
       </div>
       <div className='vert-navbar'>
         <button type='button' id='btn-title' className='nav-btn btn btn-light' disabled></button>

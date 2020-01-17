@@ -124,30 +124,16 @@ $(".nav-btn").click(function() {
 
 });
 
-// Vaihdetaan kieli kun klikataan kielinappulaa.
-$(".nav-lang-btn").click(function() {
-
-  // Vaihdetaan kielen näkyvyys.
-  $(".lang").toggleClass("hidden");
-
-  // Vaihdetaan painikkeeseen korostus oikeaan kieleen.
-  $(".language-choose").toggleClass("active-lang");
-  $(".language-choose").toggleClass("nonactive-lang");
-  $(".active-lang").attr("disabled", true);
-  $(".nonactive-lang").attr("disabled", false);
-
-});
-
-// Avataan galleria isompana, jos klikataan pikkukuvaa. Estetään sivun skrollaaminen.
-$(".img-clickable").click(function() {
-  $(".item" + $(this).attr("id").substring(3)).addClass("active");
-  // $(this).addClass("moved");
-  // window.setTimeout(function() {
-  $("#gallery-popup").toggleClass("visible");
-  $("#gallery-popup").toggleClass("invisible");
-  $("body").toggleClass("no-scroll");
-  // }, 200);
-});
+// // Avataan galleria isompana, jos klikataan pikkukuvaa. Estetään sivun skrollaaminen.
+// $(".img-clickable").click(function() {
+//   $(".item" + $(this).attr("id").substring(3)).addClass("active");
+//   // $(this).addClass("moved");
+//   // window.setTimeout(function() {
+//   $("#gallery-popup").toggleClass("visible");
+//   $("#gallery-popup").toggleClass("invisible");
+//   $("body").toggleClass("no-scroll");
+//   // }, 200);
+// });
 
 // Suljetaan galleria. Asetetaan aktiivisuus pois gallerian kuvilta, jotta se voidaan asettaa myöehmmin uudelleen.
 $(".close-popup").click(function() {

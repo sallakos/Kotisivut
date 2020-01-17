@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from './GalleryImage'
 
-const PopupGallery = ({ language, pictures }) => {
+const PopupGallery = ({ language, pictures, visibility }) => {
 
   const images = pictures.map((picture, index) => <Image key={index + 1} number={index + 1} ext={picture.ext} limit={picture.limit} alt={picture.alt} description={picture.description[language]} />)
 
   return (
-    <section id='gallery-popup' className='invisible'>
+    <section id='gallery-popup' className={'invisible'}>
       <button className='close-popup' type='button'>&times;</button>
       <div id='gallerycarousel' className='carousel slide mycarousel' data-interval='0'>
         <div className='carousel-inner'>

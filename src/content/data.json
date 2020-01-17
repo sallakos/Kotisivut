@@ -1,16 +1,38 @@
 {
+  "headings": {
+    "background": {
+      "fi": "Kuka",
+      "en": "Who"
+    },
+    "about": {
+      "fi": "Mitä",
+      "en": "What"
+    },
+    "gallery": {
+      "fi": "Välähdyksiä",
+      "en": "Snapshots"
+    }
+  },
   "description": {
-    "fi": "Data-addikti ja krooninen matkakuumeilija, jonka intohimon kohteita ovat liikunta, tekniset härpäkkeet, excelöinti ja sarjojen tykittäminen Netflixistä. Täydelliseen sunnuntaihin kuuluu pitkä kävely metsässä, pihvi, punaviini ja Masterchef Australia.",
-    "en": "A data addict, who easily gets excited about new ideas. Has a chronic travel fever, enjoys sports and loves good food. A perfect Sunday means a long stroll in the woods, steak, red wine and Masterchef Australia."
+    "fi": "Data-addikti ja krooninen matkakuumeilija, jonka intohimon kohteita ovat liikunta, tekniset härpäkkeet, excelöinti ja sarjojen tykittäminen Netflixistä. Täydelliseen sunnuntaihin kuuluu pitkä kävely metsässä, pihvi, punaviini ja MasterChef Australia.",
+    "en": "A data addict, who easily gets excited about new ideas. Has a chronic travel fever, enjoys sports and loves good food. A perfect Sunday means a long stroll in the woods, steak, red wine and MasterChef Australia."
   },
   "background": {
-    "fi": ["Olen Salla, tietotekniikasta innostunut diplomi-insinööri ja matematiikan opettaja. Valmistuin Tampereen teknillisestä yliopistosta vuonna 2017, jonka jälkeen hyppäsin opettajan hommiin kaupungin vaihtuessa Turkuun. Samalla kehitin interaktiivisia matematiikan tehtäviä sähköiseen oppimisympäristöön, ja vanha suola alkoi janottaa. Päätin toteuttaa unelmani ja palasin opiskelemaan ohjelmointia. Sillä tiellä ollaan.",
-           "Koneen näpyttelyn ohella nautin liikunnasta, tällä hetkellä ykköslajina toimii crossfit. Kokeiltu on lajeja suunnistuksesta voimanostoon, välillä ihan tosissaankin, mutta nykyisin tähtäin on oman hyvinvoinnin ylläpitämisestä. Säännöllisen epäsäännöllisesti kehitän jonkin hetkittäisen uuden projektin, johon keskitän aivan liian suuren osan energiastani: esimerkkeinä vaikkapa neulominen tai oman aktiivisuusdatan kuvaajien tutkiminen, mikä milloinkin. Kun projektia ei ole, joko suunnittelen sellaista, suoritan Netflix-maratonia, haaveilen matkustamisesta tai pohdin, mitä söisin seuraavaksi."],
-    "en": ["I'm Salla, a information technology enthusiast. I'm a Master of Science and mathematics teacher who graduated from Tampere University of Technology in 2017, after which I returned to my old home town of Turku to pursue a career in teaching. While teaching I was also developing interactive mathematics exercises for a digital learning environment, and what can I say: first love, last love. Coding is something I really enjoy, and I decided that it was something I want to do more &ndash; so now I'm studying IT at University of Turku.",
-           "While not on the computer, I enjoy sports. Currently I'm doing crossfit. I've tried different things, orienteering and powerlifting to mention a few, at times even quite seriously, but now I just want to keep myself fit. Every now and then I get excited about a new project that I work on way too eagerly: it may be knitting or studying my activity data, pretty much anything you can imagine. When not working on a project, I plan on one, binge watch Netflix, dream about travelling or think about what I'm going to eat next."]
+    "fi": [
+      "Olen Salla, tietotekniikasta innostunut diplomi-insinööri ja matematiikan opettaja. Valmistuin Tampereen teknillisestä yliopistosta vuonna 2017, jonka jälkeen hyppäsin opettajan hommiin kaupungin vaihtuessa Turkuun. Samalla kehitin interaktiivisia matematiikan tehtäviä sähköiseen oppimisympäristöön, ja vanha suola alkoi janottaa. Päätin toteuttaa unelmani ja palasin opiskelemaan ohjelmointia. Sillä tiellä ollaan.",
+      "Koneen näpyttelyn ohella nautin liikunnasta, tällä hetkellä ykköslajina toimii crossfit. Kokeiltu on lajeja suunnistuksesta voimanostoon, välillä ihan tosissaankin, mutta nykyisin tähtäin on oman hyvinvoinnin ylläpitämisestä. Säännöllisen epäsäännöllisesti kehitän jonkin hetkittäisen uuden projektin, johon keskitän aivan liian suuren osan energiastani: esimerkkeinä vaikkapa neulominen tai oman aktiivisuusdatan kuvaajien tutkiminen, mikä milloinkin. Kun projektia ei ole, joko suunnittelen sellaista, suoritan Netflix-maratonia, haaveilen matkustamisesta tai pohdin, mitä söisin seuraavaksi."
+    ],
+    "en": [
+      "I'm Salla, a information technology enthusiast. I'm a Master of Science and mathematics teacher who graduated from Tampere University of Technology in 2017, after which I returned to my old home town of Turku to pursue a career in teaching. While teaching I was also developing interactive mathematics exercises for a digital learning environment, and what can I say: first love, last love. Coding is something I really enjoy, and I decided that it was something I want to do more &ndash; so now I'm studying IT at University of Turku.",
+      "While not on the computer, I enjoy sports. Currently I'm doing crossfit. I've tried different things, orienteering and powerlifting to mention a few, at times even quite seriously, but now I just want to keep myself fit. Every now and then I get excited about a new project that I work on way too eagerly: it may be knitting or studying my activity data, pretty much anything you can imagine. When not working on a project, I plan on one, binge watch Netflix, dream about travelling or think about what I'm going to eat next."
+    ]
   },
   "about": {
-    "fi": ["Tämä kotisivu on toiminut henkilökohtaisena hiekkalaatikkona verkkotyökalujen harjoitteluun. Alunperin siihen hyödynnettiin HTML:n, CSS:n ja JavaScriptin lisäksi Bootsrapia ja jQuerya. Sittemmin kirjoitin sivut uudelleen Reactia hyödyntäen, joten tällä hetkellä käytössä on melko sekalainen setti kaikenlaista. Sivun toiminnallisuus tulee vielä tästä kehittymään, kunhan löytyy aikaa niiden parissa työskentelyyn. Tällä hetkellä osa osioista on ehkä vähän palikkaratkaisuja ja mahdollisesti hyvin naiivistikin toteutettu, mutta jokainen aloittaa jostakin. Olen kuitenkin riittävän ylpeä aikaansaannoksestani jakaakseni sen maailmalle."],
-    "en": ["This web page has been my personal sandbox for learning web development tools. Originally the page made use of Bootstrap and jQuery in addition to pure HTML and CSS. Later I wrote them again using React, so now the page is a mixup of different technologies. I'm constantly learning new tools and the functionality of this site will evolve whenever I find time to work with it. Now some of the solutions might not be as elegant as they could, but everyone starts somewhere. Anyways I'm proud enough of what I've accomplished to share it with the world."]
+    "fi": [
+      "Tämä kotisivu on toiminut henkilökohtaisena hiekkalaatikkona verkkotyökalujen harjoitteluun. Alunperin siihen hyödynnettiin HTML:n, CSS:n ja JavaScriptin lisäksi Bootsrapia ja jQuerya. Sittemmin kirjoitin sivut uudelleen Reactia hyödyntäen, joten tällä hetkellä käytössä on melko sekalainen setti kaikenlaista. Sivun toiminnallisuus tulee vielä tästä kehittymään, kunhan löytyy aikaa niiden parissa työskentelyyn. Tällä hetkellä osa osioista on ehkä vähän palikkaratkaisuja ja mahdollisesti hyvin naiivistikin toteutettu, mutta jokainen aloittaa jostakin. Olen kuitenkin riittävän ylpeä aikaansaannoksestani jakaakseni sen maailmalle."
+    ],
+    "en": [
+      "This web page has been my personal sandbox for learning web development tools. Originally the page made use of Bootstrap and jQuery in addition to pure HTML and CSS. Later I wrote them again using React, so now the page is a mixup of different technologies. I'm constantly learning new tools and the functionality of this site will evolve whenever I find time to work with it. Now some of the solutions might not be as elegant as they could, but everyone starts somewhere. Anyways I'm proud enough of what I've accomplished to share it with the world."
+    ]
   }
 }
