@@ -124,25 +124,6 @@ $(".nav-btn").click(function() {
 
 });
 
-// // Avataan galleria isompana, jos klikataan pikkukuvaa. Estetään sivun skrollaaminen.
-// $(".img-clickable").click(function() {
-//   $(".item" + $(this).attr("id").substring(3)).addClass("active");
-//   // $(this).addClass("moved");
-//   // window.setTimeout(function() {
-//   $("#gallery-popup").toggleClass("visible");
-//   $("#gallery-popup").toggleClass("invisible");
-//   $("body").toggleClass("no-scroll");
-//   // }, 200);
-// });
-
-// Suljetaan galleria. Asetetaan aktiivisuus pois gallerian kuvilta, jotta se voidaan asettaa myöehmmin uudelleen.
-$(".close-popup").click(function() {
-  $("#gallery-popup").toggleClass("visible");
-  $("#gallery-popup").toggleClass("invisible");
-  $(".carousel-item").removeClass("active");
-  $("body").toggleClass("no-scroll");
-})
-
 // Haetaan sivun sijainti.
 function getScroll() {
 

@@ -20,6 +20,15 @@ const App = () => {
   const [background, setBackground] = useState({ title: headings.background.fi, content: data.background.fi })
   const [about, setAbout] = useState({ title: headings.about.fi, content: data.about.fi })
   const [gallery, setGallery] = useState({ title: headings.gallery.fi })
+  const [popupVisibility, setPopupVisibility] = useState('invisible')
+  const [scrollEnabled, setScrollEnabled] = useState(true)
+  const [activeImage, setActiveImage] = useState(1)
+
+  const togglePopupGallery = (visibility, activeImage, scrollEnabled) => {
+    setPopupVisibility(visibility)
+    setActiveImage(activeImage)
+    setScrollEnabled(scrollEnabled)
+  }
 
   const changeTextLanguage = () => {
     setDescription(data.description[language])
@@ -32,7 +41,13 @@ const App = () => {
     language === 'fi' ? setLanguage('en') : setLanguage('fi')
   }
 
+  const toggleScroll = () => {
+    const body = document.getElementsByTagName('body')[0].classList
+    scrollEnabled ? body.remove('no-scroll') : body.add('no-scroll')
+  }
+
   useEffect(changeTextLanguage, [language])
+  useEffect(toggleScroll, [scrollEnabled])
 
   return (
     <div>
@@ -42,8 +57,8 @@ const App = () => {
       <Divider order='first' />
       <Section id='about' component={<TextContent title={about.title} content={about.content} />} />
       <Divider order='second' />
-      <Section id='gallery' component={<Gallery title={gallery.title} pictures={pictures} />} />
-      <PopupGallery language={language} pictures={pictures} />
+      <Section id='gallery' component={<Gallery title={gallery.title} pictures={pictures} onImageClick={togglePopupGallery} />} />
+      <PopupGallery language={language} pictures={pictures} visibility={popupVisibility} onCloseClick={togglePopupGallery} activeImage={activeImage} />
       <Footer />
     </div>
   )

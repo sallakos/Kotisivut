@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from './GalleryPreviewImage'
 
-const Gallery = ({ title, pictures }) => {
+const Gallery = ({ title, pictures, onImageClick }) => {
 
-  const images = pictures.map((picture, index) => <Image key={index + 1} number={index + 1} ext={picture.ext} position={picture.position || ''} alt={picture.alt} />)
+  const images = pictures.map((picture, index) => <Image key={index + 1} number={index + 1} ext={picture.ext} position={picture.position || ''} alt={picture.alt} onClick={onImageClick} />)
 
   return (
     <>
