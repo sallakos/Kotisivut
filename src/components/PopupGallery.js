@@ -30,6 +30,7 @@ const PopupGallery = ({ language, pictures, visibility, onCloseClick, activeImag
       </div>
     </section>
   )
+
 }
 
 export default PopupGallery

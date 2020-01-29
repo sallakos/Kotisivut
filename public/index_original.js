@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-// Tallennetaan tarvittavia muuttujia.
 
 // Kunkin osan alkamiskohta.
 var titleStart = $("#title").offset().top;
@@ -27,12 +26,15 @@ if ($(window).width() <= 768) {
 // Asetetaan pikkukuvien korkeus samaksi kuin leveys jos ikkunan kokoa muutetaan.
 $(window).resize(function() {
   updateImgHeight();
-  if ($(window).width() <= 768) {
-    $(".gallery-img").addClass("limit-width");
-  }
-  if ($(window).width() > 768) {
-    $(".limit-height").removeClass("limit-width");
-  };
+  // if ($(window).width() <= 768) {
+  //   $(".gallery-img").addClass("limit-width");
+  // }
+  // if ($(window).width() > 768) {
+  //   $(".limit-height").removeClass("limit-width");
+  // }
+  // if ($(window).height() <= 850) {
+  //   $(".gallery-img").addClass("limit-height")
+  // }
 
 });
 
@@ -92,14 +94,6 @@ $(window).scroll(function() {
   }
 
 });
-
-// TESTIT
-// $(window).scroll(function() {
-//   $(".floater-text1").text(scrollBottom);
-//   $(".floater-text2").text(contactEnd);
-//   // $(".floater-text3").text($(window).scrollTop());
-//   // $(".floater-text4").text(galleryStart);
-// });
 
 // Kun klikataan navigoinnin painiketta, skrollataan sivu oikeaan paikkaan. Lisäksi vaihdetaan painikkeelle merkintä aktiivinen.
 $(".nav-btn").click(function() {

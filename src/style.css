@@ -252,6 +252,12 @@ hr {
   opacity: 1;
 }
 
+/* .img-clickable:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+} */
+
 .position-top {
   object-position: top;
 }
@@ -315,18 +321,20 @@ hr {
 .img-block {
   display: block;
   margin: auto;
+  border: solid 2px yellow;
 }
 
 .limit-height {
   margin: auto;
-  height: 80vh;
+  height: 80%;
   width: auto;
+  min-width: 80%;
 }
 
 .limit-width {
   display: block;
   margin: auto;
-  width: 80%;
+  max-width: 80%;
   height: auto;
 }
 
