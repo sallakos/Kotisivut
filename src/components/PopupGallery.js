@@ -14,7 +14,7 @@ const PopupGallery = ({ language, pictures, visibility, onCloseClick, activeImag
 
   return (
     <section id='gallery-popup' className={visibility}>
-      <button onClick={() => onCloseClick('invisible', activeImage, true)} className='close-popup' type='button'>&times;</button>
+      <button onClick={() => onCloseClick('invisible', 0, true)} className='close-popup' type='button'>&times;</button>
       <div id='gallerycarousel' className='carousel slide my-carousel' data-interval='0'>
         <div className='carousel-inner'>
           {images}

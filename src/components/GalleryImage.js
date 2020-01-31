@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GalleryImage = ({ number, ext, limit, alt, description, isActive }) => {
+const GalleryImage = ({ number, ext, alt, description, isActive }) => {
 
   return (
     <div className={`carousel-item item${number} ${isActive ? 'active' : ''}`}>

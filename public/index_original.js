@@ -75,6 +75,7 @@ $(".nav-btn").click(function() {
   // Poistetaan kaikista painikkeista aktiivisuus ja lisätään se tietylle.
   $(".nav-btn").attr("disabled", false);
   $("#btn-" + targetSection).attr("disabled", true);
+  $("#btn-" + targetSection).tooltip("hide");
 
   // Skrollataan sivu oikeaan kohtaan. Haetaan tieto painikkeen id:stä.
   $("html, body").animate({
@@ -121,4 +122,9 @@ function getScroll() {
   }
 
 }
+
+// Bootstrap tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 

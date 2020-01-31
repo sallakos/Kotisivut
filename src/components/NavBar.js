@@ -1,6 +1,7 @@
 import React from 'react'
+import Button from './NavBarButton'
 
-const NavBar = ({ language, toggleLanguage }) => {
+const NavBar = ({ language, toggleLanguage, titles }) => {
 
   const isFinnish = language === 'fi' ? {status: 'active-lang', active: true} : {status: 'nonactive-lang', active: ''}
   const isEnglish = language === 'en' ? {status: 'active-lang', active: true} : {status: 'nonactive-lang', active: ''}
@@ -12,11 +13,11 @@ const NavBar = ({ language, toggleLanguage }) => {
         <button onClick={toggleLanguage} className={`nav-lang-btn ${isEnglish.status}`} type='button' disabled={isEnglish.active}>EN</button>
       </div>
       <div className='vert-navbar'>
-        <button type='button' id='btn-title' className='nav-btn btn btn-light' disabled></button>
-        <button type='button' id='btn-history' className='nav-btn btn btn-light'></button>
-        <button type='button' id='btn-about' className='nav-btn btn btn-light'></button>
-        <button type='button' id='btn-gallery' className='nav-btn btn btn-light'></button>
-        <button type='button' id='btn-contact' className='nav-btn btn btn-light'></button>
+        <Button id='title' tooltipText='Salla' disabled={true} />
+        <Button id='history' tooltipText={titles.background.title} />
+        <Button id='about' tooltipText={titles.about.title} />
+        <Button id='gallery' tooltipText={titles.gallery.title} />
+        <Button id='contact' tooltipText={titles.footer.title} />
       </div>
     </nav>
   )

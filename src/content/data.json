@@ -11,6 +11,10 @@
     "gallery": {
       "fi": "Välähdyksiä",
       "en": "Snapshots"
+    },
+    "footer": {
+      "fi": "Ota yhteyttä",
+      "en": "Contact"
     }
   },
   "description": {

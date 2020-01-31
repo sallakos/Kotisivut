@@ -27,6 +27,7 @@ const App = () => {
   const [background, setBackground] = useState({ title: headings.background.fi, content: data.background.fi })
   const [about, setAbout] = useState({ title: headings.about.fi, content: data.about.fi })
   const [gallery, setGallery] = useState({ title: headings.gallery.fi })
+  const [footer, setFooter] = useState({ title: headings.footer.fi })
   const [popupVisibility, setPopupVisibility] = useState('invisible')
   const [scrollEnabled, setScrollEnabled] = useState(true)
   const [activeImage, setActiveImage] = useState(1)
@@ -36,6 +37,10 @@ const App = () => {
     setPopupVisibility(visibility)
     setActiveImage(activeImage)
     setScrollEnabled(scrollEnabled)
+    // Jos suljetaan galleria raksista, on aktiivinen kuva 0, ja poistetaan tuo aktiivisuustieto.
+    if (activeImage === 0) {
+      document.getElementsByClassName('active')[0].classList.remove('active')
+    }
   }
 
   const changeTextLanguage = () => {
@@ -43,6 +48,7 @@ const App = () => {
     setBackground({ title: headings.background[language], content: data.background[language] })
     setAbout({ title: headings.about[language], content: data.about[language] })
     setGallery({ title: headings.gallery[language] })
+    setFooter({ title: headings.footer[language]})
   }
 
   const toggleLanguage = () => {
@@ -82,7 +88,7 @@ const App = () => {
 
   return (
     <div>
-      <NavBar language={language} toggleLanguage={toggleLanguage} />
+      <NavBar language={language} toggleLanguage={toggleLanguage} titles={{background: background, about: about, gallery: gallery, footer: footer}} />
       <Header description={description} />
       <Section id='history' component={<TextContent title={background.title} content={background.content} />} />
       <Divider order='first' />

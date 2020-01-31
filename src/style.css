@@ -17,7 +17,6 @@ body {
 }
 
 section {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -62,13 +61,12 @@ hr {
   margin: 0 auto;
 }
 
+/* Luokat */
 .section-content {
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -125,32 +123,6 @@ hr {
   border-color: hsl(165, 62%, 90%);
 }
 
-/* Otsikko */
-.title-text {
-  margin: auto;
-}
-
-.title-img {
-  height: 50vh;
-  width: auto;
-  border-radius: 5%;
-}
-
-/* About me */
-#history {
-  padding-left: 20%;
-  padding-right: 20%;
-  background-color: #121929;
-}
-
-.btn-wrapper {
-  margin-top: 50px;
-}
-
-.about-btn {
-  margin: 20px;
-}
-
 /* Override Bootsrap tooltip */
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   top: 0;
@@ -171,6 +143,28 @@ hr {
   text-align: center;
   background-color: hsl(165, 65%, 20%);
   border-radius: 0.25rem;
+}
+
+/* Otsikko */
+.title-text {
+  margin: auto;
+}
+
+.title-img {
+  height: 50vh;
+  width: auto;
+  border-radius: 5%;
+}
+
+/* About me */
+#history {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #121929;
+}
+
+.btn-wrapper {
+  margin-top: 50px;
 }
 
 /* Väliviivat */
@@ -213,6 +207,8 @@ hr {
   transform: rotate(0);
   transition: 1.5s;
 }
+
+/* About me */
 
 #about {
   padding-left: 20%;
@@ -258,10 +254,6 @@ hr {
   background-color: white;
 }
 
-/* .gallery-row {
-  height: calc(1/12*100vw);
-} */
-
 /* Popup-galleria */
 #gallery-popup {
   position: fixed;
@@ -279,7 +271,6 @@ hr {
 }
 
 .carousel-inner {
-  display: -ms-flexbox;
   display: flex;
   height: 80vh;
   margin: auto;
@@ -295,12 +286,12 @@ hr {
   height: 100%;
   width: 80%;
   display: flex;
-  display: -ms-flexbox;
   flex-direction: column;
 }
 
 .gallery-img {
   margin: auto;
+  max-width: 100%;
 }
 
 .my-carousel-caption {
@@ -311,7 +302,7 @@ hr {
 
 .close-popup {
   position: fixed;
-  left: 90%;
+  left: 92%;
   font-size: 4rem;
   background-color: transparent;
   border: none;
@@ -380,6 +371,8 @@ hr {
     font-size: 2rem;
   }
 
+  /* Luokat */
+
   .section-content {
     padding: 50px 5%;
   }
@@ -401,41 +394,29 @@ hr {
     margin: 30px auto;
   }
 
-  #history {
-    padding-left: 5%;
-    padding-right: 5%;
+  .close-popup {
+    left: 85%;
   }
 
-  #history p {
-    text-align: center;
-  }
-
-  #about {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  #about p {
-    text-align: center;
-  }
-
-  .about-btn {
-    margin: 10px;
-  }
-
-  .mycarousel {
+  .my-carousel {
     width: 95vw;
   }
 
-  .close-popup {
-    left: 80%;
-  }
-
-  .limit-width {
-    width: 95%;
+  .carousel-control-prev, .carousel-control-next {
+    width: 8%;
   }
 
   .contact-link {
     margin: 15px;
   }
+
+  #history, #about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #history p, #about p {
+    text-align: center;
+  }
+
 }
