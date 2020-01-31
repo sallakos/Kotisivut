@@ -18,7 +18,7 @@ const App = () => {
   let width = 0.167 * 0.9 * (window.innerWidth - 30)
   if(window.innerWidth >= 768 && window.innerWidth < 1200) {
     width = 0.333 * 0.9 * (window.innerWidth - 30)
-  } else {
+  } else if (window.innerWidth < 768) {
     width = 0.5 * 0.9 * (window.innerWidth - 30)
   }
 
