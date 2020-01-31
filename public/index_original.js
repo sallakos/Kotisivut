@@ -19,20 +19,8 @@ var currentSection = "";
 var targetSection = "";
 var clicked = false;
 
-// if ($(window).width() <= 768) {
-//   $(".gallery-img").addClass("limit-width");
-// };
-
-// Asetetaan pikkukuvien korkeus samaksi kuin leveys jos ikkunan kokoa muutetaan.
-$(window).resize(function() {
-  updateImgHeight();
-});
-
 // Ladatessa haetaan, missä kohtaa sivua ollaan ja asetetaan oikea navigointipainike aktiiviseksi.
 $(document).ready(function() {
-
-  // Astetaan pikkukuvien leveys.
-  updateImgHeight();
 
   // Haetaan sivun sijainti.
   getScroll();
@@ -134,8 +122,3 @@ function getScroll() {
 
 }
 
-function updateImgHeight() {
-  $(".img-clickable").css({
-    "height": $(".img-clickable").width() + "px"
-  });
-}

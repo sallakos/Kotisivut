@@ -15,6 +15,13 @@ const App = () => {
 
   const headings = data.headings
 
+  let width = 0.167 * 0.9 * (window.innerWidth - 30)
+  if(window.innerWidth >= 768 && window.innerWidth < 1200) {
+    width = 0.333 * 0.9 * (window.innerWidth - 30)
+  } else {
+    width = 0.5 * 0.9 * (window.innerWidth - 30)
+  }
+
   const [language, setLanguage] = useState('fi')
   const [description, setDescription] = useState(data.description.fi)
   const [background, setBackground] = useState({ title: headings.background.fi, content: data.background.fi })
@@ -23,6 +30,7 @@ const App = () => {
   const [popupVisibility, setPopupVisibility] = useState('invisible')
   const [scrollEnabled, setScrollEnabled] = useState(true)
   const [activeImage, setActiveImage] = useState(1)
+  const [smallImageHeight, setSmallImageHeight] = useState(width)
 
   const togglePopupGallery = (visibility, activeImage, scrollEnabled) => {
     setPopupVisibility(visibility)
@@ -46,8 +54,31 @@ const App = () => {
     scrollEnabled ? body.remove('no-scroll') : body.add('no-scroll')
   }
 
+  const updateSmallImageHeight = () => {
+
+    if (window.innerWidth >= 1200) {
+      setSmallImageHeight(0.167 * 0.8 * (document.documentElement.clientWidth - 30))
+    } else if (window.innerWidth >= 768) {
+      setSmallImageHeight(0.333 * 0.8 * (document.documentElement.clientWidth - 30))
+    } else {
+      setSmallImageHeight(0.5 * 0.9 * (document.documentElement.clientWidth - 30))
+    }
+
+    const smallImages = document.getElementsByClassName('img-clickable')
+
+    for (var i = 0; i < smallImages.length; i++) {
+      smallImages[i].style.height = smallImageHeight + 'px'
+    }
+
+  }
+
   useEffect(changeTextLanguage, [language])
   useEffect(toggleScroll, [scrollEnabled])
+  useEffect(updateSmallImageHeight)
+  useEffect(() => {
+    window.addEventListener('resize', updateSmallImageHeight)
+    return () => window.removeEventListener('resize', updateSmallImageHeight)
+  })
 
   return (
     <div>

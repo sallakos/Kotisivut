@@ -8,7 +8,7 @@ const Gallery = ({ title, pictures, onImageClick }) => {
   return (
     <>
       <h2>{title}.</h2>
-      <div className="row no-gutters justify-content-center">
+      <div id='gallery-container' className='row no-gutters justify-content-center'>
         {images}
       </div>
     </>
