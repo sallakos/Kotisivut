@@ -19,28 +19,13 @@ var currentSection = "";
 var targetSection = "";
 var clicked = false;
 
-if ($(window).width() <= 768) {
-  $(".gallery-img").addClass("limit-width");
-};
+// if ($(window).width() <= 768) {
+//   $(".gallery-img").addClass("limit-width");
+// };
 
 // Asetetaan pikkukuvien korkeus samaksi kuin leveys jos ikkunan kokoa muutetaan.
 $(window).resize(function() {
   updateImgHeight();
-  // if ($(window).width() <= 768) {
-  //   $(".gallery-img").addClass("limit-width");
-  // }
-  // if ($(window).width() > 768) {
-  //   $(".limit-height").removeClass("limit-width");
-  // }
-  // if ($(window).height() <= 850) {
-  //   $(".gallery-img").addClass("limit-height")
-  // }
-
-});
-
-// Näytetään tooltip oikein.
-$(function() {
-  $('[data-toggle="tooltip"]').tooltip()
 });
 
 // Ladatessa haetaan, missä kohtaa sivua ollaan ja asetetaan oikea navigointipainike aktiiviseksi.
@@ -55,9 +40,6 @@ $(document).ready(function() {
   // Vaihdetaan aktiiviseksi se navigointipainike minkä osan kohdalla ollaan.
   $(".nav-btn").attr("disabled", false);
   $("#btn-" + currentSection).attr("disabled", true);
-
-  // Sivu näkyviin vasta kun se on ladattu.
-  // $("body").toggleClass("invisible");
 
 });
 
