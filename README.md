@@ -1,5 +1,3 @@
-Kotisivut: [sallakos.mbnet.fi](http://sallakos.mbnet.fi)
-
 ### Info
 
 Kotisivut on alunperin tehty vain HTML:ää, CSS:ää, Bootstrapia ja jQuerya hyödyntäen.
